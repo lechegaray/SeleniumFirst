@@ -14,6 +14,17 @@ namespace SeleniumFirst
         {
             //create the reference for the browser
             IWebDriver driver = new ChromeDriver();
+
+            //Navigate to Google Page
+            driver.Navigate().GoToUrl("http://www.google.com");
+
+            //Find Element
+            IWebElement element = driver.FindElement(By.Name("q"));
+
+            //Perform Operations
+            element.SendKeys("executeautomation");
+
+            driver.Close();
         }
     }
 }
