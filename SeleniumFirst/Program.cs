@@ -18,26 +18,22 @@ namespace SeleniumFirst
         {
 
         }
+
         [SetUp]
         public void Initialize()
         {
 
             //Navigate to Google Page
-            driver.Navigate().GoToUrl("http://www.google.com");
+            driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
             Console.WriteLine("Opened URL");
 
         }
+
         [Test]
         public void ExecuteTest()
         {
 
-            //Find Element
-            IWebElement element = driver.FindElement(By.Name("q"));
 
-            //Perform Operations
-            element.SendKeys("executeautomation");
-
-            Console.WriteLine("Executed Test");
 
         }
 
