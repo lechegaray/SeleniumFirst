@@ -8,3 +8,5 @@ C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver
 C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.exe
 C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.pdb
+C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.framework.dll
+C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.framework.xml
