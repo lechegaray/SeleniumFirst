@@ -9,23 +9,34 @@ using System.Threading.Tasks;
 
 namespace SeleniumFirst
 {
-    class SeleniumSetMethods
+    public static class SeleniumSetMethods
     {
-        //Enter Text 
-        public static void EnterText(IWebElement element, string value)
+        /// <summary>
+        /// Extended method for entering text in the control
+        /// </summary>
+        /// <param name="element"></param>
+        /// <param name="value"></param>
+        public static void EnterText(this IWebElement element, string value)
         {
             element.SendKeys(value);
         }
 
-        //Click into a button, Checkbox, option etc
+        /// <summary>
+        /// //Click into a button, Checkbox, option etc
+        /// </summary>
+        /// <param name="element"></param>
 
-        public static void Click(IWebElement element)
+        public static void Clicks(this IWebElement element)
         {
             element.Click();
         }
 
-        //Selection a drop down control
-        public static void SelectDropDown(IWebElement element, string value)
+        /// <summary>
+        /// Selection a drop down control
+        /// </summary>
+        /// <param name="element"></param>
+        /// <param name="value"></param>
+        public static void SelectDropDown(this IWebElement element, string value)
         {
             new SelectElement(element).SelectByText(value);
         }

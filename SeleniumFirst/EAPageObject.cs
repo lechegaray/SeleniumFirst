@@ -38,10 +38,15 @@ namespace SeleniumFirst
             //txtMiddleName.SendKeys(middleName);
             //btnSave.Click();
 
-            SeleniumSetMethods.EnterText(txtInitial, initial);
-            SeleniumSetMethods.EnterText(txtFirstName, firstName);
-            SeleniumSetMethods.EnterText(txtMiddleName, middleName);
-            SeleniumSetMethods.Click(btnSave);
+            //seleniumsetmethods.entertext(txtinitial, initial);
+            //seleniumsetmethods.entertext(txtfirstname, firstname);
+            //seleniumsetmethods.entertext(txtmiddlename, middlename);
+            //seleniumsetmethods.click(btnsave);
+
+            txtInitial.EnterText(initial);
+            txtFirstName.EnterText(firstName);
+            txtMiddleName.EnterText(middleName);
+            btnSave.Clicks();
 
         }
 

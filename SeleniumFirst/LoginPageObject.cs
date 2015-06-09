@@ -28,9 +28,9 @@ namespace SeleniumFirst
         public EAPageObject Login(string userName, string password)
         {
             //Login
-            txtUserName.SendKeys(userName);
+            txtUserName.EnterText(userName);
             //password
-            txtPassword.SendKeys(password);
+            txtPassword.EnterText(password);
             //click button
             btnLogin.Submit();
             //return the page object
