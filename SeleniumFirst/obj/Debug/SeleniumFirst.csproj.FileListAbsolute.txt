@@ -10,3 +10,5 @@ C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumF
 C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\obj\Debug\SeleniumFirst.pdb
 C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.framework.dll
 C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\nunit.framework.xml
+C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver.Support.dll
+C:\Users\User\Documents\Projects\SeleniumFirst\SeleniumFirst\bin\Debug\WebDriver.Support.xml

@@ -32,8 +32,18 @@ namespace SeleniumFirst
         [Test]
         public void ExecuteTest()
         {
+            //Title
+            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
 
+            //Initial
+            SeleniumSetMethods.EnterText(driver, "Initial", "executeautomation", "Name");
 
+            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL(driver, "TitleId", "Id"));
+
+            Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText(driver, "Initial", "Name"));
+
+            //Click
+            SeleniumSetMethods.Click(driver, "Save", "Name");
 
         }
 
