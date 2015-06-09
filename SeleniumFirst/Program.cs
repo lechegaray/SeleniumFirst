@@ -23,7 +23,7 @@ namespace SeleniumFirst
             PropertiesCollection.driver = new ChromeDriver();
 
             //Navigate to Google Page
-            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
+            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
             Console.WriteLine("Opened URL");
 
         }
@@ -31,18 +31,25 @@ namespace SeleniumFirst
         [Test]
         public void ExecuteTest()
         {
-            //Title
-            SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
+            //login to app
+            LoginPageObject pageLogin = new LoginPageObject();
+            EAPageObject pageEA = pageLogin.Login("execute", "automation");
 
-            //Initial
-            SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
+            pageEA.FillUserForm("KK", "Karthik", "Automation");
 
-            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL("TitleId", PropertyType.Id));
 
-            Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
+            ////Title
+            //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
 
-            //Click
-            SeleniumSetMethods.Click("Save", PropertyType.Name);
+            ////Initial
+            //SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
+
+            //Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetTextFromDDL("TitleId", PropertyType.Id));
+
+            //Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name));
+
+            ////Click
+            //SeleniumSetMethods.Click("Save", PropertyType.Name);
 
         }
 
